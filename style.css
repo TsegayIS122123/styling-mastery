@@ -1,0 +1,13 @@
+
+  .ridge-box {
+    border: 10px ridge #c0c0c0;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .warning-box {
+    border: 3px dashed orange;
+    background-color: #fff8e1;
+    padding: 15px;
+    margin: 10px;
+  }
