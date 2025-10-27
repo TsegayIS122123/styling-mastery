@@ -1,13 +1,124 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  .ridge-box {
-    border: 10px ridge #c0c0c0;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
     padding: 20px;
-    margin: 10px;
-  }
+}
 
-  .warning-box {
-    border: 3px dashed orange;
-    background-color: #fff8e1;
-    padding: 15px;
-    margin: 10px;
-  }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Common Border Box Styles */
+.border-box {
+    padding: 25px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.border-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.border-box h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.border-box p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Individual Border Styles */
+.dotted-box {
+    border: 8px dotted #e74c3c;
+    background-color: #ffeaea;
+}
+
+.dashed-box {
+    border: 8px dashed #3498db;
+    background-color: #eaf7ff;
+}
+
+.solid-box {
+    border: 8px solid #2ecc71;
+    background-color: #eaffea;
+}
+
+.double-box {
+    border: 8px double #9b59b6;
+    background-color: #f5eaff;
+}
+
+.groove-box {
+    border: 15px groove #e67e22;
+    background-color: #fff5ea;
+}
+
+.ridge-box {
+    border: 15px ridge #1abc9c;
+    background-color: #eafff7;
+}
+
+.inset-box {
+    border: 15px inset #34495e;
+    background-color: #f8f9fa;
+}
+
+.outset-box {
+    border: 15px outset #f39c12;
+    background-color: #fffbf0;
+}
+
+.none-box {
+    border: none;
+    background-color: #f8f9fa;
+    color: #999;
+}
+
+.hidden-box {
+    border: 8px hidden #95a5a6;
+    background-color: #f8f9fa;
+    color: #999;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .border-box {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
