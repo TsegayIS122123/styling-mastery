@@ -2,3 +2,14 @@
     font-size: large;
     background-color: aliceblue;
 }
+.container {
+  display: flex;           /* activates Flexbox */
+  flex-direction: column;     /* arrange items horizontally */
+  border: 2px solid blue;
+}
+
+.box {
+  background: lightgreen;
+  margin: 5px;
+  padding: 20px;
+}
