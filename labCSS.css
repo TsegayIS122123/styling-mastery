@@ -1,10 +1,7 @@
-#me{
-    font-size: large;
-    background-color: aliceblue;
-}
-.container {
-  display: flex;           /* activates Flexbox */
-  flex-direction: column;     /* arrange items horizontally */
+
+/* .container {
+  display: flex;           
+  flex-direction: column;     
   border: 2px solid blue;
 }
 
@@ -12,4 +9,20 @@
   background: lightgreen;
   margin: 5px;
   padding: 20px;
+} */
+
+.container {
+  display: grid;                    /* enable grid */
+  grid-template-columns: 100px 100px 100px;  /* 3 columns */
+  grid-template-rows: 100px 100px;           /* 2 rows */
+  gap: 10px;                        /* space between items */
+  border: 2px solid blue;
+}
+
+.box {
+  background-color: lightgreen;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 30px;
 }
