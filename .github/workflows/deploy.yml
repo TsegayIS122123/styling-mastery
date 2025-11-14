@@ -14,10 +14,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # ------------------------------------------
-    # For HTML/CSS/Bootstrap: NOTHING to install
-    # ------------------------------------------
-
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
