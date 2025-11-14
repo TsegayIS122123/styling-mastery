@@ -2,21 +2,24 @@ name: Static Website CI/CD
 
 on:
   push:
-    branches:
-      - "**"         # allow ALL branches
+    branches: ["**"]
   pull_request:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4  # Use latest version
 
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
       with:
-        branch: gh-pages     # Deployment branch
-        folder: .            # Root of your website
-        clean: true
+        path: '.'
+        
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
