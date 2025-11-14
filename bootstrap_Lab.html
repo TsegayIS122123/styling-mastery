@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Lab Exercises</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center text-primary">My First Bootstrap Page</h1>
+    <p class="text-center">This page demonstrates basic Bootstrap components and utilities.</p>
+  </div>
+
+  <div class="container mt-4">
+    <div class="p-3 mb-2 bg-light text-dark rounded">This is a light background section.</div>
+    <div class="p-3 mb-2 bg-info text-white rounded">This is an info background section.</div>
+    <div class="p-3 mb-2 bg-dark text-white rounded">This is a dark background section.</div>
+  </div>
+
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img
+            src="TechxploreHub.jpg"
+            class="card-img-top"
+            alt="Sample Image"
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title">Sample Card</h5>
+            <p class="card-text">This is a simple Bootstrap card with image, text, and a button.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================== -->
+  <!-- 4. Login Form -->
+  <!-- ====================== -->
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="col-md-4">
+      <div class="card p-4 shadow">
+        <h3 class="text-center mb-4">Login</h3>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter password"
+            />
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-success">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================== -->
+  <!-- 5. Bootstrap Modal -->
+  <!-- ====================== -->
+  <div class="container text-center mt-5 mb-5">
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Open Modal
+    </button>
+
+    <!-- Modal Structure -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Welcome to Bootstrap Modal</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            This is a Bootstrap modal. You can use it for alerts, confirmations, or displaying information.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
