@@ -135,3 +135,8 @@ p.mix {
     border-color: #34495e;
     border-width: 6px;
 }
+.bg-image{
+    background-image: url(TechxploreHub.jpg);
+    height: 200px;
+   background-repeat: repeat;
+}
